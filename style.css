@@ -1,0 +1,255 @@
+
+/* Sayfanın genel görünümünü ayarlar. */
+body {
+    margin: 0;
+    background: #edf3fc;
+    color: #20395f;
+    font-family: Arial, sans-serif;
+}
+
+/* Üst başlık alanını mavi bir kart hâline getirir. */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 28px;
+    color: white;
+    background: linear-gradient(120deg, #17345f, #315b98);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(31, 65, 111, 0.15);
+}
+
+/* Başlığın yanındaki simgeyi biçimlendirir. */
+.hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #e5eeff;
+    color: #2459a5;
+    border-radius: 16px;
+    font-size: 28px;
+}
+
+/* Ana başlığın boşluklarını ayarlar. */
+.hero h1 {
+    margin: 0 0 7px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Başlık açıklamasının rengini ayarlar. */
+.hero p {
+    margin: 0;
+    color: #dce8fb;
+}
+
+/* Başlığın sağındaki dekoratif simgeyi düzenler. */
+.hero-decoration {
+    margin-left: auto;
+    font-size: 42px;
+}
+
+/* Beyaz kartların tasarımını düzenler. */
+.custom-card {
+    padding: 26px;
+    border: 1px solid #e5ebf5;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(35, 66, 108, 0.06);
+}
+
+/* Kart başlığı ve simgesini yan yana getirir. */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+/* Bölüm simgesini mavi kutu içinde gösterir. */
+.title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #e7efff;
+    color: #2864bd;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* Kart başlıklarını düzenler. */
+.section-title h2 {
+    margin: 0 0 5px;
+    color: #1d3a64;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* Kart açıklamalarını düzenler. */
+.section-title p {
+    margin: 0;
+    color: #8190a8;
+    font-size: 14px;
+}
+
+/* Form etiketlerini belirginleştirir. */
+.form-label {
+    color: #344e73;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Giriş alanlarını yuvarlatır. */
+.form-control,
+.form-select {
+    min-height: 46px;
+    border: 1px solid #dce5f2;
+    border-radius: 10px;
+    color: #243c60;
+}
+
+/* Alan seçildiğinde mavi çerçeve gösterir. */
+.form-control:focus,
+.form-select:focus {
+    border-color: #6a9ce8;
+    box-shadow: 0 0 0 3px rgba(75, 130, 215, 0.12);
+}
+
+/* Ders ekleme butonunu biçimlendirir. */
+.btn-add {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2864bd;
+    color: white;
+    font-weight: 600;
+}
+
+/* Butonun üzerine gelindiğinde rengini koyulaştırır. */
+.btn-add:hover {
+    background: #1c4e99;
+    color: white;
+}
+
+/* İşlem mesajının yazı boyutunu ayarlar. */
+.message {
+    font-size: 14px;
+}
+
+/* Liste başlığını ve tümünü sil butonunu hizalar. */
+.list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Tümünü sil butonunu düzenler. */
+.btn-delete-all {
+    border: 1px solid #f1cbd0;
+    border-radius: 9px;
+    background: #fff0f1;
+    color: #bb3445;
+}
+
+/* Butonun üzerine gelindiğinde arka planı değiştirir. */
+.btn-delete-all:hover {
+    background: #ffe0e4;
+    color: #9e2334;
+}
+
+/* Haftalık tabloyu biçimlendirir. */
+.timetable {
+    min-width: 850px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+/* Tablo başlıklarını mavi yapar. */
+.timetable thead th {
+    padding: 14px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e7efff;
+    color: #274c80;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Tablo hücrelerini biçimlendirir. */
+.timetable tbody td {
+    min-width: 85px;
+    padding: 12px 8px;
+    border: 1px solid #e6edf7;
+    border-radius: 8px;
+    background: #fbfcff;
+    color: #344c70;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+/* Ders adı hücrelerinin hafif mavi görünmesini sağlar. */
+.timetable tbody td:not(:first-child):not(:last-child):not(:empty) {
+    background: #edf4ff;
+}
+
+/* Satırların üzerine gelindiğinde görünümü değiştirir. */
+.timetable tbody tr:hover td {
+    border-color: #c7d9f5;
+}
+
+/* Silme butonunu küçültür. */
+.silButonu {
+    padding: 5px 9px;
+    border: none;
+    border-radius: 7px;
+    background: #ffe8eb;
+    color: #9a89b8;
+    font-size: 12px;
+}
+
+/* Alt yazıyı ortalar. */
+.footer-text {
+    padding-top: 15px;
+    color: #8296b7;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Küçük ekranlarda boşlukları azaltır. */
+@media (max-width: 600px) {
+    .container {
+        padding-top: 20px !important;
+    }
+
+    .hero {
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .hero-decoration {
+        font-size: 28px;
+    }
+
+    .custom-card {
+        padding: 18px;
+    }
+
+    .list-heading {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
